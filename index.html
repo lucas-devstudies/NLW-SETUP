@@ -4,66 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Nlw Setup</title>
 </head>
 <body>
     <header>
         <img src="Assets/logo.svg" alt="Logo"/>
-
         <button>
             <img src="Assets/plus.svg" alt="sinal de mais roxo"/>
-             Registrar o meu dia
+            <div>
+                Registrar o meu dia
+            </div>
         </button>
     </header>
-    <form>
+
+    <form id="form-habits">
         <div class="habits">
-            <div class="habit">☕</div>
-            <div class="habit">📖</div>
-            <div class="habit">📚</div> 
-            <div class="habit">🍖</div>
-            <div class="habit">🎮</div>
-            <div class="habit">📕</div>
-            <div class="habit">🏃🏽</div>
-            <div class="habit">🍔</div>
-            <div class="habit">📖</div>
-            <div class="habit">🌍</div>
-            <div class="habit">🎬</div>
+            <div class="habit" data-name="cafe">☕</div>
+            <div class="habit" data-name="pastor">📖</div>
+            <div class="habit" data-name="estudar">📚</div> 
+            <div class="habit" data-name="almocar">🍖</div>
+            <div class="habit" data-name="jogar">🎮</div>
+            <div class="habit" data-name="codar">📕</div>
+            <div class="habit" data-name="correr">🏃🏽</div>
+            <div class="habit" data-name="jantar">🍔</div>
+            <div class="habit" data-name="biblia">📖</div>
+            <div class="habit" data-name="ingles">🌍</div>
+            <div class="habit" data-name="series">🎬</div>
         </div>
         
-        <div class="days">
-            <div class="day">20/01
-                <input type="checkbox" name="Café">
-                <input type="checkbox" name="Bíblia">
-                <input type="checkbox" name="Estudar">
-                <input type="checkbox" name="Almoço">
-                <input type="checkbox" name="Jogar">
-                <input type="checkbox" name="Estudar">
-                <input type="checkbox" name="Caminhar">
-                <input type="checkbox" name="Jantar">
-                <input type="checkbox" name="Bíblia">
-                <input type="checkbox" name="Inglês">
-                <input type="checkbox" name="Dorama">
-            </div>
-
-            <div class="day">21/01
-                <input type="checkbox" name="Café">
-                <input type="checkbox" name="Bíblia">
-                <input type="checkbox" name="Estudar">
-                <input type="checkbox" name="Almoço">
-                <input type="checkbox" name="Jogar">
-                <input type="checkbox" name="Estudar">
-                <input type="checkbox" name="Caminhar">
-                <input type="checkbox" name="Jantar">
-                <input type="checkbox" name="Bíblia">
-                <input type="checkbox" name="Inglês">
-                <input type="checkbox" name="Dorama">
-            </div>
-        </div>
+        <div class="days"></div>
     </form>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 </html>
